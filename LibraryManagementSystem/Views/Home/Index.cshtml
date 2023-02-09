@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+<h1 class="h3 mb-4 text-gray-800">Dashboard</h1>
+<div class="jumbotron">
+    <h1>Welcome</h1>
+    <div class="col-lg mb-1">
+
+        <!-- Illustrations -->
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary"></h6>
+            </div>
+            <div class="card-body">
+                <div class="text-center">
+                    <img class="img-fluid px-3 px-sm-4 mt-1 mb-3" style="width: 20rem;"
+                         src="~/Content/customimages/library.svg" alt="...">
+                </div>
+                <p class="text-lg-center">
+                    This is your online Library Mangement System. In here you can create, view, update and delete records about books.
+                    Click the "Start" button to go directly to Books Page and enter your book records!
+                </p>
+                <p class="text-center"><a href="@Url.Action("Index","Books")" class="btn btn-primary btn-lg">Start &raquo;</a></p>
+            </div>
+        </div>
+</div>
+    </div>
+

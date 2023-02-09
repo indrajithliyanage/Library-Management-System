@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LMSDBModelStoreContainer" CdmEntityContainer="LMSDBEntities">
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="LMSDBModel.Book">
+        <MappingFragment StoreEntitySet="Book">
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="CategoryIDFK" ColumnName="CategoryIDFK" />
+          <ScalarProperty Name="PublisherIDFK" ColumnName="PublisherIDFK" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
